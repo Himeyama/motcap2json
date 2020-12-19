@@ -11,6 +11,12 @@ gem install specific_install
 gem specific_install -l "git://github.com/himeyama/motcap2json.git"
 ```
 
+## コマンド
+```sh
+motcap2json xxxxx.txt
+motcap2json xxxxx.txt > xxxxx.json # JSON ファイルに出力
+```
+
 ## Ruby で使う
 ```ruby
 require "motcap2json"
