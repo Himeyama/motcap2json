@@ -8,7 +8,7 @@ unless ARGV.size == 1
     exit false
 end
 
-unless(ary = MotCap.parse ARGV[0])
+unless(ary = Motcap2json.parse ARGV[0])
     STDERR.puts "エラー: ファイルが存在しません"
     exit false
 end
