@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require "./mot_cap"
+require "json"
+
+unless ARGV.size == 1
+    STDERR.puts "Usage: #{$0} FILE"
+    exit false
+end
+
+unless(ary = MotCap.parse ARGV[0])
+    STDERR.puts "エラー: ファイルが存在しません"
+    exit false
+end
+
+puts JSON.pretty_generate(ary, indent: "    ")

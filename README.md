@@ -2,7 +2,7 @@
 
 ```ruby
 # ビルド
-gem build
+bundle exec rake build
 ```
 
 ```sh
