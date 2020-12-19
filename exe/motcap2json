@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "./mot_cap"
+require "motcap2json"
 require "json"
 
 unless ARGV.size == 1
