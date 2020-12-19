@@ -1,7 +1,11 @@
 # Motcap2json
 
 ```ruby
+gem build motcap2json.gemspec
+```
+
+```ruby
 # Gemfile
 
-gem 'my_gem', :git => 'https://github.com/himeyama/motcap2json.git'
+gem "motcap2json", :git => 'https://github.com/Himeyama/motcap2json.git', branch: :main
 ```
