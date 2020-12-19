@@ -11,6 +11,17 @@ gem install specific_install
 gem specific_install -l "git://github.com/himeyama/motcap2json.git"
 ```
 
+## Ruby で使う
+```ruby
+require "motcap2json"
+
+filename = "xxx.txt"
+data = Motcap2json.parse(filename)
+p data.size # マーカー数
+p data[0].size # フレーム数
+p data[2][3] # マーカー3の4フレーム目のデーター [時間, x, y, z]
+```
+
 ## 開発
 
 ```ruby
