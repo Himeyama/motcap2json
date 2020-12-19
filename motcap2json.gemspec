@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://himeyama.github.io/himeyama/motcap2json"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "https://himeyama.github.io/himeyama/motcap2json"
+  #spec.metadata["allowed_push_host"] = "https://himeyama.github.io/himeyama/motcap2json"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://himeyama.github.io/himeyama/motcap2json"
