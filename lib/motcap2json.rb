@@ -18,9 +18,8 @@ module Motcap2json
                 y = match[5].to_f
                 z = match[6].to_f
                 ary[scene] = [] unless ary[scene]
-                ary[scene][id] = [time, x, y, z]
+                ary[scene][id] = [x, y, z]
             end
-            # break if i > 100
         end
         ary
     end
