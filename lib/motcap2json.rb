@@ -8,7 +8,6 @@ module Motcap2json
         data = open(filename, encoding: "cp932:UTF-8").read
         ary = []
         data.each_line.with_index do |line, i|
-            p line.chop
             line.chop =~ /\s*(\d*),\s*(\d*),\s*(\d*\.\d*),\s*(\d*),\s*(-?\d*\.\d*),\s*(-?\d*\.\d*),\s*(-?\d*\.\d*)/
             if $~
                 match = $~[1..-1]
